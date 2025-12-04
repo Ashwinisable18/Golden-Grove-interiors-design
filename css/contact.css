@@ -109,7 +109,7 @@
   --bg: #f5f2ea;
   --card-bg: #ffffff;
   --gold: #c7b57b;
-  --accent: #c0b07a;
+  --accent: #0a0a08;
   --text: #333;
   --muted: #555;
   --shadow: 0 8px 20px rgba(0,0,0,0.12);
@@ -207,10 +207,13 @@ textarea {
   background:var(--accent);
   color:white;
   border:none;
-  border-radius:25px;
+  border-radius:7px;
   font-weight:600;
   cursor:pointer;
   font-size:14px;
+}
+.btn-submit:hover{
+  background-color: #454544;
 }
 
 
