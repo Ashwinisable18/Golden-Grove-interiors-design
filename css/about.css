@@ -1,4 +1,5 @@
 
+
  *{
   margin:0;
   padding:0;
@@ -9,6 +10,18 @@
             font-family: Arial, sans-serif; 
             background-color: rgb(255, 252, 241); 
         }
+
+.main {
+    background-color: #fffcf1;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 252, 241);
+}
+
+
 .navbar-main-container {
     background-color: rgb(137, 53, 53);
     color: rgb(244, 241, 241);
@@ -55,7 +68,7 @@
 .nav-text-container {
     color: #f9f5f5;
      text-decoration: none; 
-     
+    
 }
 
 .auth-links-containar {
@@ -105,147 +118,269 @@
         font-size: 14px;
         margin: 10px 0;
     }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
- .title-style {
-            font-family: serif;
-            font-size: 30px;
-        }
 
-        .sample-inte {
-            font-size: 30px;
-            color: rgb(36, 10, 106);
-            box-shadow: 10px;
-            font-family: sans-serif;
-            font-size: 40px;
-            margin-left: 80px;
-            margin-right: 50px;
-            width:1200px;
-            text-align: center;
-        }
+.gallery-container-text {
+    margin-top: 30px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
 
- .mission-vision-container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 20px;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
+.gallery-container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 18px;
+}
 
-        .mission {
-            border-style: groove;
-            border: none;
-            width: 350px;
-            padding: 20px;
-            font-size: 20px;
-            background-color: rgb(234, 210, 175);
-            text-align: center;
-            color: rgb(79, 6, 6);
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(9, 9, 9, 0.849);
-            transition: transform 0.2s ease;
+.sub-card-contain {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-left: 30px;
+    gap: 30px
+}
 
-        }
+.sub-card-contain img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
+}
 
-        .mission:hover {
-            transform: scale(1.05);
-        }
+.sub-card-contain:hover img {
+    transform: scale(1.02);
+}
 
-        .vision {
-            border-style: groove;
-            border: none;
-            width: 350px;
-            padding: 20px;
-            height: 130px;
-            font-size: 20px;
-            background-color: rgb(234, 210, 175);
-            text-align: center;
-            color: rgb(79, 6, 6);
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(9, 9, 9, 0.849);
-            transition: transform 0.2s ease;
+.tag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.65);
+    color: hsl(0, 0%, 100%);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
 
-        }
+}
 
-        .vision:hover {
-            transform: scale(1.05);
-        }
+.title-style {
+    font-family: serif;
+    font-size: 30px;
+}
 
-        .logo {
-            text-align: center;
-            border-radius: 50px;
+.sample-inte {
+    font-size: 30px;
+    color: rgb(36, 10, 106);
+    box-shadow: 10px;
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    object-fit: cover;
+}
 
-        }
 
-        .information{
-             border-style: groove;
-            border: none;
-            
-            padding: 20px;
-            height: 200px;
-            font-size: 20px;
-            background-color: rgb(187, 228, 186);
-            text-align: center;
-            color: rgb(79, 6, 6);
-            border-radius: 10px;
-        
-            transition: transform 0.2s ease;
-            
-        }
+/* Tablet View */
+@media (max-width: 768px) {
+  .sample-inte img {
+    height: 350px;
+    object-position: center;
+  }
+}
 
-        .team-wrapper {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* Mobile View */
+@media (max-width: 480px) {
+  .sample-inte {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
 
-        .team-wrapper h2 {
-            font-size: 28px;
-            color: #1143a6;
-            margin-bottom: 30px;
-        }
 
-        .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-        }
+@media (max-width: 768px) {
+  .sample-inte {
+    height: 350px;
+  }
+}
 
-        .team-card {
-            width: 200px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            transition: transform 0.2s ease;
-            cursor: pointer;
-        }
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .sample-inte {
+    height: 250px;
+    object-position: center;
+  }
+}
 
-        .team-card:hover {
-            transform: scale(1.05);
-        }
 
-        .team-card img {
-            width: 120px;
-            height: 120px;
 
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
 
-        .team-card h3 {
-            margin: 8px 0 5px;
-            font-size: 18px;
-            color: #222;
-        }
+/* Tablet View */
+@media (max-width: 768px) {
+    .sample-inte img {
+        height: 350px;
+        object-position: center;
+    }
+}
 
-        .team-card p {
-            color: #555;
-            font-size: 14px;
-        }
+/* Mobile View */
+@media (max-width: 480px) {
+    .sample-inte img {
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media (max-width: 768px) {
+    .sample-inte{
+        height: 350px;
+    }
+}
 
-        .btn {
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .sample-inte{
+        height: 250px;
+        object-position: center;
+    }
+}
+.mission-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mission {
+    border-style: groove;
+    border: none;
+    width: 350px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(234, 210, 175);
+    text-align: center;
+    color: rgb(79, 6, 6);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(9, 9, 9, 0.849);
+    transition: transform 0.2s ease;
+
+}
+
+.mission:hover {
+    transform: scale(1.05);
+}
+
+.vision {
+    border-style: groove;
+    border: none;
+    width: 350px;
+    padding: 20px;
+    height: 130px;
+    font-size: 20px;
+    background-color: rgb(234, 210, 175);
+    text-align: center;
+    color: rgb(79, 6, 6);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(9, 9, 9, 0.849);
+    transition: transform 0.2s ease;
+
+}
+
+.vision:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    text-align: center;
+    border-radius: 50px;
+
+}
+
+.information {
+    border-style: groove;
+    border: none;
+
+    padding: 20px;
+    height: 200px;
+    font-size: 20px;
+    background-color: rgb(187, 228, 186);
+    text-align: center;
+    color: rgb(79, 6, 6);
+    border-radius: 10px;
+
+    transition: transform 0.2s ease;
+
+}
+
+.team-wrapper {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.team-wrapper h2 {
+    font-size: 28px;
+    color: #1143a6;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.team-card {
+    width: 200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    margin: 8px 0 5px;
+    font-size: 18px;
+    color: #222;
+}
+
+.team-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.btn {
     display: block;
     width: 160px;
     margin: 25px auto;
@@ -266,7 +401,7 @@
 /* Footer Styling */
 
 .footer {
-     background-color: rgb(137, 53, 53);
+    background-color: rgb(137, 53, 53);
     color: #fff;
     padding: 40px 8%;
     font-family: 'Poppins', sans-serif;
@@ -291,9 +426,13 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+
     margin: 20px 0; 
     font-size: 20px;
   
+    margin: 20px 0;
+    font-size: 25px;
+
 }
 
 .social-icons a {
@@ -301,8 +440,9 @@
     align-items: center;
     text-decoration: none;
     color: white;
-   
+
 }
+
 .social-icons img {
     width: 25px;
     height: 30px;
@@ -348,4 +488,4 @@
     .footer-links {
         text-align: center;
     }
-}       
+}
